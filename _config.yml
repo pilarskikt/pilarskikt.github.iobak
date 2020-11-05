@@ -111,4 +111,4 @@ deploy:
 backup:
     type: git
     repository:
-       github: https://github.com/Chri100pher/hexoback.git
+       github: https://github.com/Chri100pher/hexoback.git,testing
