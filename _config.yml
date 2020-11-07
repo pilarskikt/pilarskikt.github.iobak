@@ -4,7 +4,7 @@
 
 # Site
 title: My Place
-subtitle: ''
+subtitle: My IT Jurney 
 description: ''
 keywords:
 author: Chri100pher
@@ -100,15 +100,26 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: geek
 
-
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repository:
-    github: https://github.com/Chri100pher/chri100pher.github.io.git
+    github: https://github.com/Chri100pher/chri100pher.github.io.git,main
 
 backup:
     type: git
     repository:
        github: https://github.com/Chri100pher/hexoback.git,testing
+
+disqus:
+  enable: false
+  shortname: my-place-2
+  count: true
+
+# DisqusJS
+#disqusjs:
+#  enable: false
+#  api:
+#  apikey: fOhae0GRDs9MvI3ArXGTgxRPNcRfYJ3VLC5HeaKxxttZFGeiKl0UP3XRf0oJK0E9
+#  shortname: my-place-2
