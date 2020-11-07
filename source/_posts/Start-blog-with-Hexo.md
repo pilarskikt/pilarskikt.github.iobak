@@ -83,3 +83,32 @@ deploy:
 {% endcodeblock %}
 from now on every time when you will use {% codeblock %}hexo deploy{% endcodeblock %} it will push your website
 straight to Github! Isn't that awesome ?
+There is one more plugin that i highly recommend to install it's called [hexo-backup-git](https://github.com/coneycode/hexo-git-backup)
+This will backup your whole hexo configuration so if you get into some trouble with some config or just want to get access to it from other computer
+it is the best and quickest solution in my opinion.
+Installation is easy as always:
+{% codeblock %}npm install hexo-git-backup --save{% endcodeblock %}
+as always add proper configuration in `_config.yml`
+{% codeblock %}
+backup:
+    type: git
+    repository:
+       github: <repository url>
+{% endcodeblock %}
+usage of this plugin is same as in previous, to backup configuration type in terminal
+{% codeblock %}hexo backup{% endcodeblock %} or {% codeblock %}hexo b{% endcodeblock %}
+
+## Start blogging
+After configuring Hexo, blogging is just a breeze:
+* create new post md file
+{% codeblock %}hexo new POST_FILE_NAME{% endcodeblock %}
+* create new page md file
+{% codeblock %}hexo new page PAGE_FILE{% endcodeblock %}
+* Cleans the cache file (db.json) and generated files (public).
+{% codeblock %}hexo clean{% endcodeblock %}
+* start hexo server to see changes locally
+{% codeblock %}hexo server or hexo s{% endcodeblock %}
+* my favourite - website deploy
+{% codeblock %}hexo deploy{% endcodeblock %}
+
+Now you should be ready to start your blog journey on GitHub just like me. Good luck!
