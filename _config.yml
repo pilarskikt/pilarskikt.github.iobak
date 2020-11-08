@@ -109,7 +109,7 @@ deploy:
 
 backup:
     type: git
-    theme: geek
+    theme: geek, hexo-theme-geek
     repository:
        github: https://github.com/Chri100pher/hexoback.git,testing
 
