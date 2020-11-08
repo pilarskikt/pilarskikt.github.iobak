@@ -445,19 +445,25 @@ label.el-checkbox {
 
 @keyframes fadeInAnimation2 { 
     0% { 
-        opacity: 0; 
+        opacity: 0;
+        max-height: 0;
+        transition: max-height 0.05s ease-out;
     } 
     100% { 
-          opacity: 1; 
+        opacity: 1;
+        max-height: 2000px;
+        transition: max-height 3.0s ease-in;
     } 
 }  
 
 #content {
     opacity: 0;
-    animation: fadeInAnimation2 ease 3s; 
+    overflow: hidden;
+    animation: fadeInAnimation2 3s ease; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
-    animation-delay: 1s; 
+    animation-delay: 1s;
+    transition: height 5s linear;
 }
 
 
