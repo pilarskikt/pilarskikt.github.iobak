@@ -1,0 +1,13 @@
+logo_title: My Place
+
+style: black
+
+favicon: /favicon.ico
+
+menu:
+  Home: /
+  AboutMe: /aboutme
+  Github: https://github.com/chri100pher
+
+highlight:
+  enable: false
