@@ -7,6 +7,7 @@ favicon: /favicon.ico
 menu:
   Home: /
   AboutMe: /aboutme
+  Tags: /tags/
   Github: https://github.com/chri100pher
 
 highlight:
