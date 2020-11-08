@@ -12,7 +12,7 @@ Beginning...
 I finally decided to start blog to save memories from my IT journey. Don't get me wrong 
 i tried to start own blog many times(too many :-D) but this time I'm really doing this!
 After some research i decided to go with Hexo because of Node.js and simplicity.
-
+<br/>
 I will shortly guide you how to setup Hexo on Github. 
 Instruction of pages repository creation can be found at [GitHub](https://pages.github.com/) it is 
 easy and well explained so o won't go through it here.
