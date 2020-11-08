@@ -446,27 +446,39 @@ label.el-checkbox {
 @keyframes fadeInAnimation2 { 
     0% { 
         opacity: 0;
-        max-height: 0;
-        transition: max-height 0.05s ease-out;
     } 
     100% { 
         opacity: 1;
-        max-height: 2000px;
-        transition: max-height 3.0s ease-in;
     } 
-}  
+} 
+
+@keyframes expand { 
+    0% { 
+        max-height: 0;
+        transition: max-height 0.15s ease-out;
+    } 
+    100% {
+        max-height: 9999px;
+        transition: max-height 0.25s ease-in;
+    } 
+} 
+
 
 #content {
     opacity: 0;
     overflow: hidden;
-    animation: fadeInAnimation2 3s ease; 
+    animation: fadeInAnimation2 5s ease, expand 5s ease-in-out; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
     animation-delay: 1s;
     transition: height 5s linear;
 }
-
-
+.post-content {
+    overflow: hidden;
+    animation: fadeInAnimation2 3s, expand 15s ease-in-out;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
 
 .breadcrumb>li {
     display: inline-block;
